@@ -489,7 +489,7 @@ h2 {
         box-sizing: border-box;
         overflow-y: auto;
         overflow-x: hidden;
-        padding: 20px;
+        padding: 20px 20px 100px;
     }
 
     .page img {
@@ -511,5 +511,18 @@ h2 {
         line-height: 30px;
         font-family: 'Caveat', cursive;
     }
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4,
+    .btn5,
+    .btn6,
+    .btn7,
+    .btn8,
+    .btn9,
+    .btn10 {
+        position: sticky;
+        z-index: 10;
+        bottom: 20px;}
 }
  
