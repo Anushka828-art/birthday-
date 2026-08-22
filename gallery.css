@@ -449,5 +449,16 @@ h2 {
         width: 90% !important;
         height: 80vh !important;
     }
+    .book-page {
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.book-page img {
+    max-width: 100%;
+    height: auto;
+}
 }
  
