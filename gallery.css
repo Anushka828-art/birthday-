@@ -153,7 +153,7 @@ h2 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolute;
+    position: sticky;
     z-index: 2;
     left: 85%;
     transform: translateX(-50%);
@@ -179,7 +179,7 @@ h2 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolute;
+    position: sticky;
     z-index: 2;
     left: 20%;
     width: 60px;
@@ -219,7 +219,7 @@ h2 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolute;
+    position: sticky;
     z-index: 2;
     left: 85%;
     transform: translateX(-50%);
@@ -245,7 +245,7 @@ h2 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolute;
+    position: sticky;
     z-index: 2;
     left: 20%;
     width: 60px;
@@ -271,7 +271,7 @@ h2 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolute;
+    position: sticky;
     z-index: 2;
     left: 85%;
     transform: translateX(-50%);
@@ -297,7 +297,7 @@ h2 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolute;
+    position: sticky;
     z-index: 2;
     left: 20%;
     width: 60px;
@@ -328,69 +328,15 @@ h2 {
     background-color: blanchedalmond;
     z-index: 2;
 }
-
 .page5 {
     background-color: blanchedalmond;
     z-index: 1;
 }
-
-.btn7 {
-    background-color: #1a0b12;
-    color: antiquewhite;
-    display: block;
-    position: absolute;
-    z-index: 2;
-    left: 85%;
-    transform: translateX(-50%);
-    width: 60px;
-    bottom: 20px;
-    right: 0%;
-    height: 50px;
-    border-radius: 50px;
-    box-shadow: #3a1c28;
-    transition: background-color 2s 500ms;
-    margin-top: 20px;
-}
-
-.btn7:hover {
-    color: #1a0b12;
-    background-color: blanchedalmond;
-    cursor: pointer;
-    transition: all 2s ease-out;
-    transition: margin-right 2s;
-}
-
-.btn8 {
-    background-color: #1a0b12;
-    color: antiquewhite;
-    display: block;
-    position: absolute;
-    z-index: 2;
-    left: 20%;
-    width: 60px;
-    transform: translateX(-50%);
-    bottom: 20px;
-    right: 0%;
-    height: 50px;
-    border-radius: 50px;
-    box-shadow: #3a1c28;
-    transition: background-color 2s 500ms;
-    margin-top: 20px;
-}
-
-.btn8:hover {
-    color: #1a0b12;
-    background-color: blanchedalmond;
-    cursor: pointer;
-    transition: all 2s ease-out;
-    transition: margin-right 2s;
-}
-
 .btn9 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolute;
+    position: sticky;
     z-index: 2;
     left: 85%;
     transform: translateX(-50%);
@@ -416,7 +362,7 @@ h2 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolute;
+    position: sticky;
     z-index: 2;
     left: 20%;
     width: 60px;
@@ -439,41 +385,7 @@ h2 {
 }
 
 
-/* @media screen and (max-width: 600px) {
-    body {
-    background-color: #4a2f24;
 
-    }
-
-    .book {
-        width: 90% !important;
-        height: 80vh !important;
-    }
-    
-    .book-page {
-    box-sizing: border-box;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 20px;
-}
-
-.book-page img {
-    max-width: 100%;
-    height: auto;
-}
-    .list {
-    word-spacing: 2px;
-    line-height: 2px;
-    font-family: 'Caveat', cursive;
-    font-size: 15px;
-    font-weight: 50;
-}
-    .letter{
-    margin: 15px;
-    word-spacing: 5px;
-    line-height: 30px;
-    font-family: 'Caveat', cursive;
-} */
 @media screen and (max-width: 600px) {
 
     body {
@@ -492,10 +404,10 @@ h2 {
         padding: 20px 20px 100px;
     }
 
-    .page img {
+    /* .page img {
         max-width: 100%;
         height: auto;
-    }
+    } */
 
     .list {
         word-spacing: 2px;
