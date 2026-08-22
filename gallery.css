@@ -470,8 +470,8 @@ h2 {
 }
     .letter{
     margin: 15px;
-    word-spacing: 2px;
-    line-height: 16px;
+    word-spacing: 4px;
+    line-height: 25px;
     font-family: 'Caveat', cursive;
 }
  
