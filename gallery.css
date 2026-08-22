@@ -404,10 +404,10 @@ h2 {
         padding: 20px 20px 100px;
     }
 
-    /* .page img {
+    .page img {
         max-width: 100%;
         height: auto;
-    } */
+    }
 
     .list {
         word-spacing: 2px;
@@ -435,6 +435,6 @@ h2 {
     .btn10 {
         position: sticky;
         z-index: 10;
-        bottom: 20px;}
+        bottom: 15px;}
 }
  
