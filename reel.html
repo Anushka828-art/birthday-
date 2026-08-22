@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>night sky</title>
+    <link rel="stylesheet" href="reel.css">
+</head>
+<body>
+    <div class="reel">
+        <div class="slide">
+        </div>
+    </div>
+    <button class = "btn">next</button>
+    <script>
+        console.log("Anushka");
+const memories = [
+    {image: "images/photo1.jpg"},
+    {image: "images/photo2.jpg"},
+    {image: "images/photo3.jpg"},
+    {image: "images/photo5.jpg"},
+    {image: "images/photo6.jpg"},
+    {image: "images/photo7.jpg"},
+    {image: "images/photo8.jpg"},
+    {image: "images/photo9.jpg"},
+    {image: "images/photo10.jpg"},
+]
+let slideContainer = document.querySelector(".slide");
+memories.forEach((memories, index) => {
+    let img = document.createElement("div");
+    img.classList.add("img");
+    img.classList.add(`img${index + 1}`);
+    if (memories.image) {
+        img.innerHTML = `<img src = "${memories.image}" alt = "memory">`;
+    }
+    slideContainer.appendChild(img);
+});
+let currentIndex = 0;
+const slideWidth = 320;
+const originalImages = [...slideContainer.children];
+originalImages.forEach((img) => {
+    slideContainer.appendChild(img.cloneNode(true));
+});
+function moveSlide(){
+     console.log("running");
+    currentIndex++;
+    slideContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    if (currentIndex === memories.length) {
+        setTimeout(() => {
+            slideContainer.style.transition = "none";
+            currentIndex = 0;
+            slideContainer.style.transform = "translate(0)";
+            setTimeout(() =>{
+                slideContainer.style.transition ="transform 1.5s ease"
+            },50);
+        },600);
+    };
+}
+moveSlide();
+setInterval(moveSlide,1500);
+let button = document.querySelector(".btn");
+button.addEventListener("click",() =>{
+    window.location.href ="annvrsry.html";
+})
+    </script>
+</html>

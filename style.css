@@ -1,0 +1,114 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ .lock {
+     min-height: 85vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ body {
+     min-height: 100vh;
+     background: radial-gradient(circle at top left, #3a1c28, #1a0b12);
+     padding: 20px;
+     overflow-x: hidden;
+ }
+
+ h1 {
+     color: whitesmoke;
+     align-items: center;
+ }
+
+ .glow {
+
+     position: absolute;
+     width: 300px;
+     height: 300px;
+     background: rgba(230, 57, 70, 0.25);
+     filter: blur(120px);
+     border-radius: 50%;
+     filter: blur(120px);
+ }
+
+ .password {
+     position: relative;
+     font-size: 25px;
+     width: 100%;
+     max-width: 250px;
+     height: 220px;
+     background: rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(16px);
+     -webkit-backdrop-filter: blur(16px);
+     border: 1px solid rgba(255, 255, 255, 0.12);
+     border-radius: 24px;
+     padding: 40px 32px;
+     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+     animation: fadeIn 1s ease-in-out;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     color: darkgoldenrod;
+     display: flex;
+     align-items: center;
+ }
+
+ button {
+     position: absolute;
+     bottom: 20px;
+     background-color: #a7676d;
+     color: white;
+     font-family: inherit;
+     font-size: 14px;
+     font-weight: 500;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 25px;
+     cursor: pointer;
+     box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+     transition: all 0.3s ease;
+ }
+
+ button:hover {
+     background-color: #ff4d5a;
+     transform: translateY(-2px);
+     box-shadow: 0 6px 16px rgba(230, 57, 70, 0.5);
+ }
+
+ #password {
+     width: 100%;
+     padding: 14px 18px;
+     margin-top: 20px;
+     background: rgba(255, 255, 255, 0.08);
+     color: white;
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     border-radius: 14px;
+     outline: none;
+     font-family: inherit;
+     font-size: 16px;
+     transition: 0.3s ease;
+ }
+
+ #password::placeholder {
+     color: rgba(255, 255, 255, 0.5);
+ }
+
+ #password:focus {
+     border-color: #d4a44c;
+     box-shadow: 0 0 15px rgba(212, 164, 76, 0.25);
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(20px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }

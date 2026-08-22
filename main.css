@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cinzel ";
+    color: #dfb15b;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at top left, #3a1c28, #1a0b12);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    letter-spacing: 4px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #dfb15b;
+    color: #dfb15b;
+}
+
+button:hover {
+    background-color: #dfb15b;
+    color: #2e0813;
+    transition: translateY(-3px);
+}
+
+.btn {
+    border: 2px solid #dfb15b;
+    color: #dfb15b;
+    background: transparent;
+    padding: 30px 60px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 100;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    letter-spacing: 10px;
+}
+
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 1.5rem;
+    }
+
+    .h2 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 16px;
+        margin: 10px 10;
+        padding: 10px 10px;
+        letter-spacing: 6px;
+
+    }
+}

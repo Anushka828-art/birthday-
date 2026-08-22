@@ -1,0 +1,172 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top left, #3a1c28, #1a0b12);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Background Glow */
+        .glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(230, 57, 70, 0.25);
+            filter: blur(120px);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        /* Main Letter Container */
+        .letter-container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 550px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            padding: 40px 32px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            color: #f3e8ee;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Heading */
+        .header-title {
+            font-family: 'Caveat', cursive;
+            font-size: 2.8rem;
+            color: #ffb7c5;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Message Body */
+        .content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #e2d1d9;
+            margin-bottom: 18px;
+            font-weight: 300;
+        }
+
+        .content p strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .hinglish-tag {
+            display: inline-block;
+            background: rgba(255, 183, 197, 0.15);
+            color: #ffb7c5;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-style: italic;
+            margin: 8px 0;
+            border: 1px solid rgba(255, 183, 197, 0.2);
+        }
+
+        /* Floating Heart Icon at Bottom */
+        .heart-badge {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .heart-badge span {
+            display: inline-block;
+            font-size: 1.8rem;
+            background: linear-gradient(135deg, #ff4d6d, #ff758f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        .btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+button {
+    /* Corner Position (Card ke andar niche-right corner) */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    /* Theme Styles (Card ke matching colors) */
+    background-color: #a7676d; /* Warm romantic red/pink hue */
+    color: #ffffff;
+    font-family: inherit; /* Card wala same font use hoga */
+    font-size: 14px;
+    font-weight: 500;
+    
+    /* Shape & Borders */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Pill shape jo card ke soft edges se match karti hai */
+    
+    /* Interactive Effects */
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3); /* Subtle glow effect */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect (Jab mouse button par layenge) */
+button:hover {
+    background-color: #ff4d5a;
+    transform: translateY(-2px); /* Slight lift */
+    box-shadow: 0 6px 16px rgba(230, 57, 70, 0.5);
+}
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .letter-container {
+                padding: 20px 20px;
+                margin: 2px;
+            }
+
+            .header-title {
+                font-size: 2.2rem;
+            }
+
+            .content p {
+                font-size: 0.98rem;
+            }
+        }

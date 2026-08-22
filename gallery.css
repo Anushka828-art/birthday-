@@ -1,0 +1,453 @@
+body {
+    height: 100%;
+    width: 100%;
+    color: #5f1919;
+    background-color: #4a2f24;
+    overflow: hidden;
+    font-family: Cinzel, 'loboster two', 'yuyu', sans-serif;
+}
+
+.cover {
+    transform-origin: left;
+    transition: transform 3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    z-index: 6;
+    background-color: #1a0b12;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.cover.open {
+    transform: rotateY(-180deg);
+}
+
+.book {
+    height: 560px;
+    width: 40%;
+    margin: auto;
+    background: radial-gradient(circle at top left, #3a1c28);
+    color: bisque;
+    border-radius: 30px;
+    margin-top: 40px;
+    position: relative;
+    perspective: 2500px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    top: 2%;
+    color: goldenrod;
+    margin-left: 30%;
+}
+
+.letter {
+    top: 2%;
+    color: #5f1919;
+    margin: 15px;
+    word-spacing: 4px;
+    line-height: 33px;
+    font-family: 'Caveat', cursive;
+}
+.shyri{
+     top: 2%;
+    color: #5f1919;
+    margin: 15px;
+    word-spacing: 4px;
+    line-height: 60px;
+    font-family: 'Caveat', cursive;
+}
+
+.list {
+    top: 2%;
+    color: #5f1919;
+    margin: 50px;
+    word-spacing: 4px;
+    line-height: 3px;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    font-weight: 60;
+}
+
+img {
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin: 30px auto;
+}
+
+video {
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin: 30px auto;
+    background: transparent;
+}
+
+h2 {
+    top: 10%;
+    color: goldenrod;
+    margin-left: 23%;
+}
+
+.btn {
+
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 85%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    transition: background-color 2s 60s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #1a0b12;
+    color: blanchedalmond;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    transition: margin-right 2s;
+    border: goldenrod;
+}
+
+.page {
+    background-color: blanchedalmond;
+    transform-origin: left;
+    transition: transform 2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    z-index: 1;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: linear-gradient(to right, #f8f1e7, #fffaf4);
+    box-shadow: inset 12px 0 20px rgba(0, 0, 0, 0.12), 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.page img {
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.page video {
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.btn1 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 60px;
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn1:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.btn2 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    width: 60px;
+    transform: translateX(-50%);
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn2:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.page1 {
+    background-color: blanchedalmond;
+    z-index: 5;
+}
+
+.page.open {
+    transform: rotateY(-180deg);
+}
+
+.page2 {
+    background-color: blanchedalmond;
+    z-index: 4;
+}
+
+.btn3 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 60px;
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn3:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.btn4 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    width: 60px;
+    transform: translateX(-50%);
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn4:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.btn5 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 60px;
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn5:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.btn6 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    width: 60px;
+    transform: translateX(-50%);
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn6:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.page3 {
+    background-color: blanchedalmond;
+    z-index: 3;
+}
+
+.page4 {
+    background-color: blanchedalmond;
+    z-index: 2;
+}
+
+.page5 {
+    background-color: blanchedalmond;
+    z-index: 1;
+}
+
+.btn7 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 60px;
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn7:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.btn8 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    width: 60px;
+    transform: translateX(-50%);
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn8:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.btn9 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 60px;
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn9:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+.btn10 {
+    background-color: #1a0b12;
+    color: antiquewhite;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    width: 60px;
+    transform: translateX(-50%);
+    bottom: 20px;
+    right: 0%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #3a1c28;
+    transition: background-color 2s 500ms;
+    margin-top: 20px;
+}
+
+.btn10:hover {
+    color: #1a0b12;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transition: margin-right 2s;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+    background-color: #4a2f24;
+
+    }
+
+    .book {
+        width: 90% !important;
+        height: 80vh !important;
+    }
+}
+ 

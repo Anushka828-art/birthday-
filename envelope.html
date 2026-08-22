@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="envelope.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Yuyu&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope">
+            <div class="flap">
+                <button class="button">See me</button>
+            </div>
+            <div class="letter">
+                <h4>Ready for the next surprise?</h4>
+                <button class="seemore same">yes</button>
+                <button class="goback same">no</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let button = document.querySelector(".button");
+        let flap = document.querySelector(".flap");
+        let letter = document.querySelector(".letter");
+        let goback = document.querySelector(".goback");
+        goback.addEventListener("click", () => {
+            flap.classList.remove("open");
+            letter.classList.remove("open");
+        });
+        button.addEventListener("click", () => {
+            flap.classList.add("open");
+            letter.classList.add("open");
+            goback.classList.toggle("open");
+        });
+        let seemore = document.querySelector(".seemore");
+        seemore.addEventListener("click", () => {
+            window.location.href = "fee.html";
+        })
+    </script>
+</body>
+
+</html>
