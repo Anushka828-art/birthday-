@@ -336,7 +336,7 @@ h2 {
     background-color: #1a0b12;
     color: antiquewhite;
     display: block;
-    position: absolue;
+    position: absolute;
     z-index: 2;
     left: 85%;
     transform: translateX(-50%);
@@ -435,7 +435,7 @@ h2 {
     .btn10 {
         position: sticky;
         /* z-index: 10; */
-        bottom: 8px;
+        bottom: 10px;
     }
 }
  
