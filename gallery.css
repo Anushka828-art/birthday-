@@ -449,6 +449,7 @@ h2 {
         width: 90% !important;
         height: 80vh !important;
     }
+    
     .book-page {
     box-sizing: border-box;
     overflow-y: auto;
@@ -460,5 +461,17 @@ h2 {
     max-width: 100%;
     height: auto;
 }
+    .list {
+    word-spacing: 2px;
+    line-height: 2px;
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    font-weight: 50;
+}
+    .letter{
+    margin: 15px;
+    word-spacing: 2px;
+    line-height: 16px;
+    font-family: 'Caveat', cursive;
 }
  
